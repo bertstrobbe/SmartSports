@@ -1,0 +1,9 @@
+{
+    "authenticationDb": "LISA",
+    "homePageUrl": "http://www.cce.be",
+    "frameworkLoader": "",
+    "defaultPartition": "default",
+    "maintainPasswordInSmartUser": "false",
+    "defaultCompany": "1",
+    "AppServerKeepAlivePeriod": "300"
+}

@@ -1,0 +1,10 @@
+-s 500 -mmax 65534 -D 500
+-assemblies "C:\cce\oe117\assemblies"
+-db LISA -H cce-dev01 -S 4500
+-db LISADMS -H cce-dev01 -S 4530
+-db AUTH -H cce-dev01 -S 4570
+-db DEVINFO -H cce-dev01 -S 4540
+-db LISALRAP -H cce-dev01 -S 4520
+-rereadnolock -inp 32000 -tok 4000 -zn
+-nosplash
+-p Consultingwerk/BusinessEntityDesigner/start.p
