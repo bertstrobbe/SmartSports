@@ -134,7 +134,7 @@ CLASS be.cce.dotnet.SmartSports.Employee.EmployeeForm INHERITS SmartWindowForm:
         ribbonGroup3 = NEW Infragistics.Win.UltraWinToolbars.RibbonGroup("ribbonGroup1").
         @VisualDesigner.FormMember (NeedsInitialize="true").
         DEFINE VARIABLE buttonTool18 AS Infragistics.Win.UltraWinToolbars.ButtonTool NO-UNDO.
-        buttonTool18 = NEW Infragistics.Win.UltraWinToolbars.ButtonTool("FilterGe11").
+        buttonTool18 = NEW Infragistics.Win.UltraWinToolbars.ButtonTool("FindGe11").
         @VisualDesigner.FormMember (NeedsInitialize="true").
         DEFINE VARIABLE buttonTool48 AS Infragistics.Win.UltraWinToolbars.ButtonTool NO-UNDO.
         buttonTool48 = NEW Infragistics.Win.UltraWinToolbars.ButtonTool("FetchAll").
@@ -245,7 +245,7 @@ CLASS be.cce.dotnet.SmartSports.Employee.EmployeeForm INHERITS SmartWindowForm:
         buttonTool47 = NEW Infragistics.Win.UltraWinToolbars.ButtonTool("TransactionUndo").
         @VisualDesigner.FormMember (NeedsInitialize="true").
         DEFINE VARIABLE buttonTool19 AS Infragistics.Win.UltraWinToolbars.ButtonTool NO-UNDO.
-        buttonTool19 = NEW Infragistics.Win.UltraWinToolbars.ButtonTool("FilterGe11").
+        buttonTool19 = NEW Infragistics.Win.UltraWinToolbars.ButtonTool("FindGe11").
         @VisualDesigner.FormMember (NeedsInitialize="true").
         DEFINE VARIABLE buttonTool49 AS Infragistics.Win.UltraWinToolbars.ButtonTool NO-UNDO.
         buttonTool49 = NEW Infragistics.Win.UltraWinToolbars.ButtonTool("FetchAll").
@@ -591,7 +591,7 @@ CLASS be.cce.dotnet.SmartSports.Employee.EmployeeForm INHERITS SmartWindowForm:
         buttonTool47:SharedPropsInternal:CustomizerCaption = "Revert".
         buttonTool47:SharedPropsInternal:Enabled = FALSE.
         buttonTool47:SharedPropsInternal:ToolTipText = "Revert transaction".
-        buttonTool19:SharedPropsInternal:Caption = "FilterGe11".
+        buttonTool19:SharedPropsInternal:Caption = "FindGe11".
         buttonTool49:SharedPropsInternal:Caption = "FetchAll".
         @VisualDesigner.FormMember (NeedsInitialize="false", InitializeArray="true").
         DEFINE VARIABLE arrayvar12 AS Infragistics.Win.UltraWinToolbars.ToolBase EXTENT 15 NO-UNDO.
@@ -1092,7 +1092,7 @@ CLASS be.cce.dotnet.SmartSports.Employee.EmployeeForm INHERITS SmartWindowForm:
         DEFINE VARIABLE lWhere AS CHARACTER NO-UNDO.
 		
 		CASE e:Tool:Key:
-		    WHEN "FilterGe11"
+		    WHEN "FindGe11"
 		    THEN DO:
                 lWhere = "where eEmployee.EmpNum ge 11".
     
