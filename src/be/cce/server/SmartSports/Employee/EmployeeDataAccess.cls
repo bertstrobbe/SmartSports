@@ -189,14 +189,12 @@ CLASS be.cce.server.SmartSports.Employee.EmployeeDataAccess
         @return The base query string used to retrieve data for the given temp-table
     ------------------------------------------------------------------------------*/
     METHOD OVERRIDE PUBLIC CHARACTER SourceDefaultQuery (pcTable AS CHARACTER):
-    MESSAGE pcTable
-    VIEW-AS ALERT-BOX.
         @SourceDefaultQueryCaseBlock.
         CASE pcTable:
             when "eEmployee":u then
                 return "for each Employee indexed-reposition":u. 
             when "eVacation":u then
-                return "for each Vacation where EndDate > 1/1/2019 indexed-reposition":u. 
+                return "for each Vacation indexed-reposition":u. 
 
         END CASE . 
         
